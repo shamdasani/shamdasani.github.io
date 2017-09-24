@@ -56,7 +56,7 @@ const Me = () => (
       <Subtitle>
         I also <Link href="https://blog.shamdasani.org">write</Link>,{' '}
         <Link href="https://shamdasani.org/training">run</Link>, and take{' '}
-        <Link href="https://photos.shamdasani.org">photos</Link>.
+        <Link href="https://shamdasani.org/photos">photos</Link>.
       </Subtitle>
       <Social>
         <a href="https://twitter.com/shamdasanii">
