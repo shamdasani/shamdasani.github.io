@@ -9,81 +9,79 @@ const Card = styled.div.attrs({
   border-radius: 10px;
   height: 300px;
   margin: 1rem;
-  background: ${props => props.color};
+  background: ${props => props.bg};
 `
 
 const Title = styled.h1`
   font-weight: 600;
   font-size: 2em;
+  color: ${props => props.color};
+  padding-left: 5%;
+  padding-top: 5%;
 `
 
 const Subtitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
+  color: ${props => props.color};
+  padding-left: 5%;
 `
 
-const Project = styled.div.attrs({
-  color: props => props.color
-})`
-  color: ${props => props.color};
-  padding: 5%;
-`
+function Project(props) {
+  return (
+    <Tilt options={{ max: 20 }}>
+      <a href={props.url}>
+        <Card bg={props.bg}>
+          <Title color={props.color}>{props.title}</Title>
+          <Subtitle color={props.color}>{props.description}</Subtitle>
+        </Card>
+      </a>
+    </Tilt>
+  )
+}
 
 const Work = () => (
   <div>
     <Row>
       <Col sm={6}>
-        <Tilt options={{ max: 20 }}>
-          <a href="https://enlight.ml">
-            <Card color="linear-gradient(to right, #ff5f6d, #ffc371)">
-              <Project color="#4a4a4a">
-                <Title>Enlight</Title>
-                <Subtitle>Learn to code by building projects</Subtitle>
-              </Project>
-            </Card>
-          </a>
-        </Tilt>{' '}
+        <Project
+          className="project"
+          url="https://enlight.ml"
+          bg="linear-gradient(to right, #ff5f6d, #ffc371)"
+          color="#4a4a4a;"
+          title="Enlight"
+          description="Learn to code by building projects"
+        />
       </Col>
       <Col sm={6}>
-        <Tilt options={{ max: 20 }}>
-          <a href="https://github.com/blinkcare/blink">
-            <Card color="linear-gradient(to right, #000046, #1cb5e0);">
-              <Project color="#E2E2E2">
-                <Title>Blink</Title>
-                <Subtitle>
-                  Affordable and accurate communication for locked-in patients
-                </Subtitle>
-              </Project>
-            </Card>
-          </a>
-        </Tilt>{' '}
+        <Project
+          url="https://github.com/blinkcare/blink"
+          bg="linear-gradient(to right, #000046, #1cb5e0);"
+          color="#E2E2E2"
+          title="Blink"
+          description="Affordable and accurate communication for locked-in patients"
+        />
       </Col>
     </Row>
 
     <Row>
       <Col sm={6}>
-        <Tilt options={{ max: 20 }}>
-          <a href="https://wiki.shamdasani.org">
-            <Card color="linear-gradient(to right, #00b09b, #96c93d)">
-              <Project color="#fcfcbb">
-                <Title>Wiki</Title>
-                <Subtitle>Wikipedia viewer fitted to my visual taste</Subtitle>
-              </Project>
-            </Card>
-          </a>
-        </Tilt>
+        <Project
+          url="https://wiki.shamdasani.org"
+          bg="linear-gradient(to right, #00b09b, #96c93d)"
+          color="#fcfcbb;"
+          title="Wiki"
+          description="Wikipedia viewer fitted to my visual taste"
+        />
       </Col>
       <Col sm={6}>
-        <Tilt options={{ max: 20 }}>
-          <a href="https://shamdasani.org/color">
-            <Card color="linear-gradient(to right, #ee9ca7, #ffdde1)">
-              <Project color="#4a4a4a">
-                <Title>Color</Title>
-                <Subtitle>Simple color contrast generator</Subtitle>
-              </Project>
-            </Card>
-          </a>
-        </Tilt>
+        <Project
+          url="https://shamdasani.org/color"
+          bg="linear-gradient(to right, #ee9ca7, #ffdde1)"
+          color="#4a4a4a;"
+          title="Color"
+          description="Simple color contrast generator"
+        />
       </Col>
     </Row>
   </div>

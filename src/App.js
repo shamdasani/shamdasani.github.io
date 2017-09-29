@@ -20,73 +20,47 @@ const Title = styled.h1`
   text-align: center;
   user-select: none;
   color: #fff;
+  position: absolute;
+
+  @media (max-width: 700px) {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 `
 
 const Overlay = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  padding-top: 10vh;
+  padding-left: 5%;
+  @media (max-width: 700px) {
+    padding-left: 0;
+    padding-top: 0;
+  }
 `
 
-const Fullscreen = styled.div.attrs({
-  background: props => props.gradient,
-  height: props => props.h
-})`
+const Welcome = styled.div`
   height: ${props => props.h};
-  left: 0;
-  top: 0;
+  background: ${props => props.gradient};
+  z-index: 0;
+  @media screen and (max-width: 700px) {
+    height: 100vh;
+  }
+`
+
+const Fullscreen = styled.div`
+  height: ${props => props.h};
   background: ${props => props.gradient};
   z-index: 0;
 `
 
 const App = () => (
   <main>
-    <Fullscreen
-      gradient="linear-gradient(to right, #485563, #29323c)"
-      h="100vh"
-    >
+    <Welcome gradient="linear-gradient(to right, #485563, #29323c)" h="40vh">
       <Particles />
-
       <Overlay>
         <Title>Samay Shamdasani</Title>
       </Overlay>
-      <a href="#me">
-        <img src="https://icon.now.sh/chevron/down/32/fff" />
-      </a>
-      <style>
-        {`
-      @keyframes bounce {
-        from {
-          transform: translateY(0px);
-        }
-        to {
-          transform: translateY(-15px);
-          }
-        }
-      @-webkit-keyframes bounce {
-        from {
-          transform: translateY(0px);
-          }
-        to {
-          transform: translateY(-15px);
-          }
-        }
-      img {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        user-select: none;
-        left: 0;
-        right: 0;
-        z-index: 2;
-        bottom: 0;
-        margin-bottom: 1em;
-        animation: bounce 1s infinite alternate;
-        }
-      `}
-      </style>
-    </Fullscreen>
+    </Welcome>
     <Fullscreen
       gradient="linear-gradient(to right, #ece9e6, #ffffff)"
       h="400vh"
@@ -97,7 +71,3 @@ const App = () => (
 )
 
 export default App
-
-// BLOG: https://blog.cortes.us/
-// Fix html with meta tags and such, build fo rproduciton
-// photos page, training page REACT

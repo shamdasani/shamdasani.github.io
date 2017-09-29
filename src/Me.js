@@ -8,20 +8,19 @@ const Hey = styled.h1`
   margin: 0;
   font-size: 3rem;
 `
-const Button = styled.button.attrs({
-  background: props => props.bg
-})`
+const Button = styled.a`
   margin: 5px;
+  margin-bottom: 2%;
   font-size: 1rem;
   color: white;
   padding: 1em;
   background: ${props => props.bg};
   border-radius: 5px;
   border: none;
+  display: inline-block;
 
   &:hover {
     opacity: 0.6;
-    cursor: pointer;
   }
 
   &:focus {
@@ -47,39 +46,42 @@ const Subtitle = styled.h3`
   font-weight: 600;
 `
 
-const Social = styled.div``
-
 const Me = () => (
   <div id="me">
     <Container>
-      <Hey>I'm an always-learning developer based in New Jersey, USA.</Hey>
+      <Hey>I&#39;m an always-learning developer based in New Jersey, USA.</Hey>
       <Subtitle>
         I also <Link href="https://blog.shamdasani.org">write</Link>,{' '}
         <Link href="https://shamdasani.org/training">run</Link>, and take{' '}
         <Link href="https://shamdasani.org/photos">photos</Link>.
       </Subtitle>
-      <Social>
-        <a href="https://twitter.com/shamdasanii">
-          <Button bg="linear-gradient(to right, #56ccf2, #2f80ed)">
-            Twitter
-          </Button>
-        </a>
-        <a href="https://instagram.com/shamdasanii">
-          <Button bg="linear-gradient(to right, #16222a, #3a6073)">
-            Instagram
-          </Button>
-        </a>
-        <a href="https://github.com/shamdasani">
-          <Button bg="linear-gradient(to right, #ffb75e, #ed8f03)">
-            GitHub
-          </Button>
-        </a>
-      </Social>
-      <a href="mailto:hi@shamdasani.org">
-        <Button bg="linear-gradient(to right, #ff512f, #dd2476)">
-          hi@shamdasani.org
-        </Button>
-      </a>
+      <Button
+        bg="linear-gradient(to right, #56ccf2, #2f80ed)"
+        href="https://twitter.com/shamdasanii"
+      >
+        Twitter
+      </Button>
+
+      <Button
+        bg="linear-gradient(to right, #16222a, #3a6073)"
+        href="https://instagram.com/shamdasanii"
+      >
+        Instagram
+      </Button>
+
+      <Button
+        bg="linear-gradient(to right, #ffb75e, #ed8f03)"
+        href="https://github.com/shamdasani"
+      >
+        GitHub
+      </Button>
+      <Button
+        bg="linear-gradient(to right, #ff512f, #dd2476)"
+        href="mailto:hi@shamdasani.org"
+      >
+        hi@shamdasani.org
+      </Button>
+
       <Subtitle>Featured Work</Subtitle>
       <Work />
       <Subtitle>Latest Writing</Subtitle>

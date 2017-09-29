@@ -25,11 +25,17 @@ class Particles extends Component {
         <style>
           {`
           #particles-js {
-            position:absolute;
-            width: 100%;
-            height: 100%;
-            z-index:1;
+          position:absolute;
+           width: 100%;
+           height: 60%;
+           z-index:1;
           }
+          @media screen and (max-width: 700px) {
+             #particles-js {
+               height: 100%;
+             }
+           }
+
           `}
         </style>
       </div>
