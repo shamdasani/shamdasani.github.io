@@ -51,7 +51,7 @@ const Me = () => (
     <Container>
       <Hey>I&#39;m an always-learning developer based in New Jersey, USA.</Hey>
       <Subtitle>
-        I also <Link href="https://blog.shamdasani.org">write</Link>,{' '}
+        I also <Link href="https://shamdasani.org/blog">write</Link>,{' '}
         <Link href="https://shamdasani.org/training">run</Link>, and take{' '}
         <Link href="https://shamdasani.org/photos">photos</Link>.
       </Subtitle>
