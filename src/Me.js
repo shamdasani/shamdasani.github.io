@@ -49,7 +49,10 @@ const Subtitle = styled.h3`
 const Me = () => (
   <div id="me">
     <Container>
-      <Hey>I&#39;m an always-learning developer based in New Jersey, USA.</Hey>
+      <Hey>
+        I&#39;m an always-learning developer based in the Greater New York City
+        area.
+      </Hey>
       <Subtitle>
         I also <Link href="https://shamdasani.org/blog">write</Link>,{' '}
         <Link href="https://shamdasani.org/training">run</Link>, and take{' '}
