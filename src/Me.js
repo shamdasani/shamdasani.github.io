@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Work from './Work'
+import Writing from './Writing'
 
 const Container = styled.div`padding: 5%;`
 
@@ -54,7 +55,7 @@ const Me = () => (
         area.
       </Hey>
       <Subtitle>
-        I also <Link href="https://shamdasani.org/blog">write</Link>,{' '}
+        I also <Link href="#writing">write</Link>,{' '}
         <Link href="https://shamdasani.org/training">run</Link>, and take{' '}
         <Link href="https://shamdasani.org/photos">photos</Link>.
       </Subtitle>
@@ -84,11 +85,9 @@ const Me = () => (
       >
         hi@shamdasani.org
       </Button>
-
-      <Subtitle>Featured Work</Subtitle>
-      <Work />
-      <Subtitle>Latest Writing</Subtitle>
     </Container>
+    <Work />
+    <Writing />
   </div>
 )
 

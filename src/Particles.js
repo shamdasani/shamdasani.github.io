@@ -27,7 +27,7 @@ class Particles extends Component {
           #particles-js {
           position:absolute;
            width: 100%;
-           height: 60%;
+           height: 55%;
            z-index:1;
           }
           @media screen and (max-width: 700px) {

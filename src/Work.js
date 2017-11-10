@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Tilt from 'react-tilt'
 import { Row, Col } from 'react-grid-system'
+import Subtitle from './utils/Subtitle'
 
-const Card = styled.div.attrs({
-  background: props => props.color
-})`
+const Card = styled.div`
   border-radius: 10px;
   height: 300px;
   margin: 1rem;
@@ -20,7 +19,7 @@ const Title = styled.h1`
   padding-top: 5%;
 `
 
-const Subtitle = styled.h3`
+const Description = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
   color: ${props => props.color};
@@ -33,7 +32,7 @@ function Project(props) {
       <a href={props.url}>
         <Card bg={props.bg}>
           <Title color={props.color}>{props.title}</Title>
-          <Subtitle color={props.color}>{props.description}</Subtitle>
+          <Description color={props.color}>{props.description}</Description>
         </Card>
       </a>
     </Tilt>
@@ -42,6 +41,10 @@ function Project(props) {
 
 const Work = () => (
   <div>
+    <Subtitle
+      g="linear-gradient(to right, #56ccf2, #2f80ed);"
+      name="Featured Work"
+    />
     <Row>
       <Col sm={6}>
         <Project
