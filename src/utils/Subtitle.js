@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const TextStyled = styled.h3`
   margin-top: 2rem;
   padding: 5%;
+  padding-top: 5%;
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
