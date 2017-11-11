@@ -11,7 +11,7 @@ import Date from '../post-elements/Date'
 const HelloWorld = () => (
   <div>
     <Back>
-      <a href="https://shamdasani.org/#writing">&#8592;</a>
+      <Link to="/#writing">&#8592;</Link>
     </Back>
     <Welcome title="Hello World" />
     <Date>10/04/17</Date>

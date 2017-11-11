@@ -26,7 +26,7 @@ const Home = () => (
     <Welcome title="Samay Shamdasani" />
     <Fullscreen
       gradient="linear-gradient(to right, #ece9e6, #ffffff)"
-      h="400vh"
+      h="500vh"
     >
       <Me />
     </Fullscreen>
