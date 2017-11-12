@@ -15,7 +15,7 @@ class ViewCounter extends Component {
     }
   }
   componentDidMount() {
-    const URL = 'http://shamdasani.now.sh/?id='
+    const URL = 'http://shamdasani-views.now.sh/?id='
     const id = this.props.id
     fetch(URL + id)
       .then(response => response.json())
