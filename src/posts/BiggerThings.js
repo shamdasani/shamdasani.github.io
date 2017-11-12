@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 import Container from '../post-elements/Container'
 import Back from '../post-elements/Back'
 import Date from '../post-elements/Date'
+import ViewCounter from '../post-elements/ViewCounter'
+import PostData from '../post-elements/PostData'
 
 const HelloWorld = () => (
   <div>
@@ -14,7 +16,11 @@ const HelloWorld = () => (
       <Link to="/#writing">&#8592;</Link>
     </Back>
     <Welcome title="Onto bigger things" />
-    <Date>10/13/17</Date>
+    <PostData>
+      <Date>10/13/17</Date>
+      <ViewCounter id="bigger-things" />
+    </PostData>
+
     <Container>
       <p>
         About a little over a year ago, I started{' '}

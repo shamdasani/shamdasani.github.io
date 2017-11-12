@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 import Container from '../post-elements/Container'
 import Back from '../post-elements/Back'
 import Date from '../post-elements/Date'
+import ViewCounter from '../post-elements/ViewCounter'
+import PostData from '../post-elements/PostData'
 
 const HelloWorld = () => (
   <div>
@@ -14,7 +16,11 @@ const HelloWorld = () => (
       <Link to="/#writing">&#8592;</Link>
     </Back>
     <Welcome title="Learning to Live" />
-    <Date>11/10/17</Date>
+    <PostData>
+      <Date>11/10/17</Date>
+      <ViewCounter id="life" />
+    </PostData>
+
     <Container>
       <h1>Life is short, as everyone knows.</h1>
       <p>
