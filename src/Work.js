@@ -66,6 +66,27 @@ const Work = () => (
         />
       </Col>
     </Row>
+    <Row>
+      <Col sm={6}>
+        <Project
+          url="https://shamdasani.org/WeatherPi"
+          bg="linear-gradient(to right, #e1eec3, #f05053);"
+          color="#4a4a4a"
+          title="WeatherPi"
+          description="Temperature and humidity vizualization of my room"
+        />
+      </Col>
+
+      <Col sm={6}>
+        <Project
+          url="https://github.com/shamdasani/peters"
+          bg="linear-gradient(to right, #c94b4b, #4b134f);"
+          color="#E4E4E4"
+          title="Peters"
+          description="Cross-platform app for Saint Peter's Prep students built with React Native"
+        />
+      </Col>
+    </Row>
 
     <Row>
       <Col sm={6}>
