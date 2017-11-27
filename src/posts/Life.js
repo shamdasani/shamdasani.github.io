@@ -3,6 +3,7 @@ import Subtitle from '../utils/Subtitle'
 import styled from 'styled-components'
 import Welcome from '../Welcome'
 import { Link } from 'react-router-dom'
+import DocumentTitle from '../utils/DocumentTitle'
 
 import Container from '../post-elements/Container'
 import Back from '../post-elements/Back'
@@ -15,6 +16,7 @@ const HelloWorld = () => (
     <Back>
       <Link to="/#writing">&#8592;</Link>
     </Back>
+    <DocumentTitle title="Learning to Live" />
     <Welcome title="Learning to Live" />
     <PostData>
       <Date>11/10/17</Date>

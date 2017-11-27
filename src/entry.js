@@ -6,6 +6,8 @@ import Scroll from './Scroll'
 import App from './App'
 import Home from './Home'
 
+import SpanishProject from './misc/SpanishProject'
+
 import HelloWorld from './posts/HelloWorld'
 import SideProject from './posts/SideProject'
 import Life from './posts/Life'
@@ -17,6 +19,7 @@ render(
       <Route path="/hello-world" component={HelloWorld} />
       <Route path="/side-project" component={SideProject} />
       <Route path="/life" component={Life} />
+      <Route path="/portafolio" component={SpanishProject} />
     </Scroll>
   </BrowserRouter>,
   app
