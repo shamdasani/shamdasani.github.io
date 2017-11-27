@@ -15,10 +15,10 @@ const HelloWorld = () => (
     <Back>
       <Link to="/#writing">&#8592;</Link>
     </Back>
-    <Welcome title="Onto bigger things" />
+    <Welcome title="My side project" />
     <PostData>
       <Date>10/13/17</Date>
-      <ViewCounter id="bigger-things" />
+      <ViewCounter id="side-project" />
     </PostData>
 
     <Container>
@@ -54,15 +54,7 @@ const HelloWorld = () => (
         everything that you've worked for be unable to be accessed by the world.
         I've learnt my lesson - the hard way.
       </p>
-      <p>
-        However, they say everything happens for a reason. That night, I got a
-        call from Zach Latta, the director of{' '}
-        <a href="https://hackclub.com">Hack Club</a>. I am proud to say that
-        Enlight is now ready to begin a whole other adventure with the folks
-        over at Hack Club. I promise that even though the domain is lost, the
-        tutorials, which are the essence of the site, will continue to remain
-        under a new home very soon.
-      </p>
+      <p>I'm currently working on taking Enlight to a whole new level.</p>
       <p>
         For now, Enlight can be reached at{' '}
         <a href="https://tryenlight.github.io">tryenlight.github.io</a>.
