@@ -12,6 +12,10 @@ import Date from '../post-elements/Date'
 import ViewCounter from '../post-elements/ViewCounter'
 import PostData from '../post-elements/PostData'
 
+import Image1 from '../img/spanish-project/run.jpg'
+import Image2 from '../img/spanish-project/fam.jpg'
+import Image3 from '../img/spanish-project/run2.jpg'
+
 import { Row, Col } from 'react-grid-system'
 
 const Container = styled.div`
@@ -82,7 +86,7 @@ const HelloWorld = () => (
       </Navbar>
       <Row>
         <Col sm={6}>
-          <Image src="../img/spanish-project/run.jpg" />
+          <Image src={Image1} />
         </Col>
         <Col sm={6}>
           <h1>
@@ -99,7 +103,7 @@ const HelloWorld = () => (
       </Row>
       <Row>
         <Col sm={6}>
-          <Image src="../img/spanish-project/fam.jpg" />
+          <Image src={Image2} />
         </Col>
         <Col sm={6}>
           <h1> Esta es mi familia.</h1>
@@ -113,7 +117,7 @@ const HelloWorld = () => (
       </Row>
       <Row>
         <Col sm={6}>
-          <Image src="../img/spanish-project/run2.jpg" />
+          <Image src={Image3} />
         </Col>
         <Col sm={6}>
           <h1>Más sobre mí</h1>
