@@ -122,12 +122,11 @@ const HelloWorld = () => (
         <Col sm={6}>
           <h1>Más sobre mí</h1>
           <h3>
-            Mi estilo de vida es muy sano. Corro en mi tiempo libre. Mis
-            deportes favoritos son el baloncesto y correr porque me gusta jugar
-            esos deportes. En general, me gusta hacer cosas nuevas. Me encanta
-            ir de aventuras. Me encanta viajar. No me gusta hacer las mismas
-            cosas. Mi clase favorita es el español porque es muy divertido. Por
-            último, me encanta comer pizza a veces.
+            Corro en mi tiempo libre. Mis deportes favoritos son el baloncesto y
+            correr porque me gusta jugar esos deportes. En general, me gusta
+            hacer cosas nuevas. Me encanta ir de aventuras. Me encanta viajar.
+            No me gusta hacer las mismas cosas. Mi clase favorita es el español
+            porque es muy divertido. Por último, me encanta comer pizza a veces.
           </h3>
           <h3>
             Mi estilo de vida es muy sano. Yo suelo dormir siete horas al día.
