@@ -14,9 +14,9 @@ const TextStyled = styled.h3`
 
 const Gradient = styled.div`background: ${props => props.g};`
 
-const Subtitle = ({ g, name }) => (
+const Subtitle = ({ g, name, id }) => (
   <Gradient g={g}>
-    <TextStyled>{name}</TextStyled>
+    <TextStyled id={id}>{name}</TextStyled>
   </Gradient>
 )
 export default Subtitle

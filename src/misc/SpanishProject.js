@@ -19,7 +19,7 @@ const Container = styled.div`
   font-size: 1.3em;
 
   a {
-    color: #2f80ed;
+    color: #ffffff;
     border-bottom: 1px solid #d3d3d3;
     transition: all 300ms ease;
   }
@@ -38,6 +38,27 @@ const Image = styled.img`
   width: 100%;
 `
 
+const Navbar = styled.nav`
+  margin-top: 8%;
+  margin-bottom: 5%;
+  display: table;
+  text-align: center;
+  box-shadow: 10px 10px 5px #e3e4e5;
+
+  width: 100%;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+`
+const NavContainer = styled.div`display: table-row;`
+
+const NavItem = styled.a`
+  padding: 1rem;
+  display: table-cell;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+`
+
 const HelloWorld = () => (
   <div>
     <Back>
@@ -49,82 +70,93 @@ const HelloWorld = () => (
       <Date>12/01/17</Date>
       <ViewCounter id="spanish-project" />
     </PostData>
-
     <Container>
+      <Navbar>
+        <NavContainer>
+          <NavItem href="#escritos">Mis Escritos</NavItem>
+          <NavItem href="#presentaciones">Mis Presentaciones</NavItem>
+          <NavItem href="#trabajos">Mis trabajos favoritos</NavItem>
+          <NavItem href="#videos">Mis Videos</NavItem>
+          <NavItem href="#personal">Reflexión Personal</NavItem>
+        </NavContainer>
+      </Navbar>
       <Row>
         <Col sm={6}>
-          <Image src="https://lh3.googleusercontent.com/dEYmPweH_wYFRb1xWQ2fOjNh9HT82WlHar6voCbyIOuRVruyFq99YuL27vrXuwYQD8fIkMSruLWmiyM2J4lmJeQrLCttGIIMRXPMvXW2x8ZpchmR0Y87oDDyT3P8m6z80bEeZ22MB6xeDlzkCzbyIpIaON9hlA42SMZAQTLA_rq6tYmpxeXW50-fBUk_HtUMNINrrNFvtVyXqvuP5jBdt5eB7Zkh4k3S7iR9CWNyQbffqNs65J2Smbdt3GjmI2tor8loiT61ZhiwwO61IWEXzs3E-e69rKX2IGVpsh5CbwmojxCltnsMKGSOTpojWpYIC6a69WssfAKqiCFiBkAPUwSGCK5aW03TMsZ4xJyM610VUSmu6zLnWZnstyoC5kYkQt-zOHS2jiwQD3BuXrwKwlIqjU7JwYLlHDzvudYWKX0IKuRK73nzvHF-a3IzxmiFD_zwM_NT9hy90TBMicapEjkbDb_9qcv8h43xlOb594C7hQKLiK3ZzR2JIgrj88QtUKHrjI8DsiHigBplAccpC27oTdr69uXR48a4hhww-TiBKWf-0weNknr9rHg2WCHlQF2S9iSeMQ1n9P9V7CPfXgAi_IZwlT7evBtQ=w2782-h1856-no" />
+          <Image src="../img/spanish-project/run.jpg" />
         </Col>
         <Col sm={6}>
           <h1>
             Bienvenido! Me llamo Samay Shamdasani. Este es mi portafolio
             digital.
           </h1>
-          <h2>Tengo dieciséis años. Mi cumpleaños es el diecisiete de mayo.</h2>
-          <h2>
-            Soy un trabajador duro, optimista y amigable. Me encanta correr,
-            comer y dormir.
-          </h2>
-
-          <h2>Soy de Little Falls, Nueva Jersey, USA.</h2>
+          <h3>
+            Tengo dieciséis años. Mi cumpleaños es el diecisiete de mayo. Soy un
+            trabajador duro, optimista y amigable. Soy un estudiante en la
+            escuela de San Pedro. Me encanta correr, comer y dormir. Soy de
+            Little Falls, Nueva Jersey, USA.
+          </h3>
         </Col>
       </Row>
       <Row>
         <Col sm={6}>
-          <Image src="https://lh3.googleusercontent.com/XOPrLn2wY-rqftof3Gc3-UM6dyQA933kyWkXp0V0M0a2hWhFXe14ipJOQOprxhRtGisI1DqmE1t1K9tqoVl9A8mH0pX07jdhORO0DtoZjRCNCQaQ5Rz0B3tCSvWu_0ju7Ph6v60UzZW8V_33GyZ76-ddB4tEhEIjp6xNGB29ck95o91_vHWyyHpNqHsLL2zrvXTdP8tp4QwaXzK0QCVsfQqj4lPKKYcEMLwIiaNhfQpqJAxyxGC8KDdHbfAwYiR4uDHX0w2UrWHugHUmqhNwu0ul0MkAVyE1NU06KoXb2xbcTUPu5x053LApHId4kTmgrqMYc1LBn0h2Huo7ktFl8E7Sqhnw3Gq2SFvW7EJhVi0vCr-0vVaXXm6CrH-uKiGcSQVDlwTIWo7heje3evPWgZHNrvkM7hQiGmrGQ-EdK7A6dTAozYBQL_EOggux8M4qdQcU1Gsq0RyZCygz8Ob_SiElUXdLahzYfRaJvkjQ8egTq46q_KpZ73RxT69f7vP0gE_nhBJvkmdseslS08siAn-oRhZA9AdY0iiK4VsGD-7JJsprIdoauJ5Lin2vpA2jD12KqvYDSVBRi7ZXHsh5XQKcHZaToAywdGawZdEDPHbtgEhJJzkCZ70jU1EqNYcgT6Gqu_xPLjncFHhLKF3TPnkPcnPSdg=w2782-h1856-no" />
+          <Image src="../img/spanish-project/fam.jpg" />
         </Col>
         <Col sm={6}>
           <h1> Esta es mi familia.</h1>
-          <h2>Vivo con mis padres y mi hermana. </h2>
-
-          <h2>
-            Los nombres de mis padres son Raveena y Johnny. Mi hermana se llama
-            Nesa.
-          </h2>
-
-          <h2>Mi hermana es muy molesta pero yo amo mi hermana.</h2>
-
-          <h2>
-            Tengo que sacar la basura, limpiarla y cocinar de vez en cuando.
-          </h2>
+          <h3>
+            Vivo con mis padres y mi hermana. Mi madre se llama Raveena y mi
+            padre se llama Johnny. Mi hermana se llama Nesa. Mi hermana es muy
+            molesta pero yo amo mi hermana. En mi casa, tengo que sacar la
+            basura, limpiarla y cocinar de vez en cuando. No tengo mascotas.
+          </h3>
         </Col>
       </Row>
       <Row>
         <Col sm={6}>
-          <Image src="https://lh3.googleusercontent.com/-KPdSUWzeQVrbFHZw8jC1pj_I7_5i5fqEoyOdFkL3UP-ymKT1gTNYD91X0mQ24Y5G_TH1zrMCi5g4U9MtgEVAF6rk0mixhpR4gNyJRjr8X-3SwbbYLJ8JFAlEYrM3Nki0Uqtznqqq3cxuGGjajjdyqqXtKrow7dfivadUZNSGC8zXlxLAW7lrNtcg3cpZex8QEiW59BjBAu8B4C_3cN9W7R2YqNGzPiN6nBe8mM2RAjXInJJS7DsSCc9iz-BTq_40ZlvlmY2gJoTnKbdkETSNz0QR3NTmrvJ7UKGXDPHVrenOXRIvLoHBWdokIpUHOpl4JYfjq0EX4vOMhr3ddSVZ0nOLaDvCmx2_VDcpDIqEIYFb9u2OnAFD50UdnaXZmcEbUtYXqw8xTVBgK51I0ybEf8fhUzcrDycOE3R0nORTH2PofHhQvwzhQUKzQeEh8peHJ86S43itUh9LGP8K1dgPPKGQksA4VpoY7qM3WkfdB61_h9zStelgkP-pD44-PdNlSthALwrrt56zdTHV1eCh7rwxcawKSDcIb3IXhpPttS07JWaRdUywpKAMhPovE5OjClSSwDGt6wDGwZqQJRyLaQrUyJLP-EJjTSd=w2782-h1856-no" />
+          <Image src="../img/spanish-project/run2.jpg" />
         </Col>
         <Col sm={6}>
-          <h2>
-            Corro en mi tiempo libre. Mis deportes favoritos son el baloncesto y
-            correr porque me gusta jugar esos deportes.
-          </h2>
-          <h2>
-            En general, me gusta hacer cosas nuevas. Me encanta ir de aventuras.
-            Me encanta viajar. No me gusta hacer las mismas cosas.
-          </h2>
-          <h2>Mi clase favorita es el español porque es divertido.</h2>
-          <h2>Por último, me encanta comer pizza.</h2>
+          <h1>Más sobre mí</h1>
+          <h3>
+            Mi estilo de vida es muy sano. Corro en mi tiempo libre. Mis
+            deportes favoritos son el baloncesto y correr porque me gusta jugar
+            esos deportes. En general, me gusta hacer cosas nuevas. Me encanta
+            ir de aventuras. Me encanta viajar. No me gusta hacer las mismas
+            cosas. Mi clase favorita es el español porque es muy divertido. Por
+            último, me encanta comer pizza a veces.
+          </h3>
+          <h3>
+            Mi estilo de vida es muy sano. Yo suelo dormir siete horas al día.
+            Me despierto a las cinco y media de la mañana. Además, como un
+            desayuno saludable, almuerzo y cena. Es necesario comer una dieta
+            sana para su salud. Deberías seguir una dieta saludable.
+          </h3>
         </Col>
       </Row>
       <Subtitle
         g="linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);"
         name="Mis Escritos"
+        id="escritos"
       />
       <Subtitle
         g="linear-gradient(to right, #23074d, #cc5333);"
         name="Mis Presentaciones"
+        id="presentaciones"
       />
       <Subtitle
         g="linear-gradient(to right, #fc4a1a, #f7b733);"
         name="Mis trabajos favoritos"
+        id="trabajos"
       />
       <Subtitle
         g="linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);"
         name="Mis Videos"
+        id="videos"
       />
       <Subtitle
         g="linear-gradient(to right, #ff4b1f, #1fddff);"
         name="Reflexión Personal"
+        id="personal"
       />
     </Container>
   </div>
