@@ -81,9 +81,9 @@ const Me = () => (
       </Button>
       <Button
         bg="linear-gradient(to right, #ff512f, #dd2476)"
-        href="mailto:hi@shamdasani.org"
+        href="mailto:techboss302@gmail.com"
       >
-        hi@shamdasani.org
+        techboss302@gmail.com
       </Button>
     </Container>
     <Work />
