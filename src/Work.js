@@ -42,7 +42,7 @@ function Project(props) {
 const Work = () => (
   <div>
     <Subtitle
-      g="linear-gradient(to right, #56ccf2, #2f80ed);"
+      g="linear-gradient(to right, #232526, #414345);"
       name="Featured Work"
     />
     <Row>

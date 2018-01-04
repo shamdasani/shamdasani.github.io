@@ -17,7 +17,10 @@ const HelloWorld = () => (
       <Link to="/#writing">&#8592;</Link>
     </Back>
     <DocumentTitle title="Learning to Live" />
-    <Welcome title="Learning to Live" />
+    <Welcome
+      c="linear-gradient(to right, #232526, #414345);"
+      title="Learning to Live"
+    />
     <PostData>
       <Date>11/10/17</Date>
       <ViewCounter id="life" />

@@ -16,7 +16,10 @@ const HelloWorld = () => (
     <Back>
       <Link to="/#writing">&#8592;</Link>
     </Back>
-    <Welcome title="My side project" />
+    <Welcome
+      c="linear-gradient(to right, #232526, #414345);"
+      title="My side project"
+    />
     <DocumentTitle title="My side project" />
 
     <PostData>

@@ -23,7 +23,10 @@ const Fullscreen = styled.div`
 
 const Home = () => (
   <main>
-    <Welcome title="Samay Shamdasani" />
+    <Welcome
+      c="linear-gradient(to right, #232526, #414345);"
+      title="Samay Shamdasani"
+    />
     <Fullscreen
       gradient="linear-gradient(to right, #ece9e6, #ffffff)"
       h="500vh"

@@ -6,7 +6,7 @@ const Container = styled.div`
   line-height: 1.5;
   margin-left: 5%;
   font-size: 1.3em;
-
+  margin-top: 2em;
   a {
     color: #2f80ed;
     border-bottom: 1px solid #d3d3d3;

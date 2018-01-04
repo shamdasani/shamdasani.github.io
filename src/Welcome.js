@@ -4,7 +4,7 @@ import Particles from './Particles'
 
 const Title = styled.h1`
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   user-select: none;
   color: #fff;
@@ -35,11 +35,7 @@ const Background = styled.div`
 `
 
 const Welcome = ({ title, c }) => (
-  <Background
-    gradient="linear-gradient(to right, #56ccf2, #2f80ed);"
-    mobile="100vh"
-    h="40vh"
-  >
+  <Background gradient={c} mobile="100vh" h="40vh">
     <Particles />
     <Overlay>
       <Title>{title}</Title>

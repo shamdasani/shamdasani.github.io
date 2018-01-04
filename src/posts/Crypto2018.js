@@ -11,6 +11,7 @@ import Back from '../post-elements/Back'
 import Date from '../post-elements/Date'
 import ViewCounter from '../post-elements/ViewCounter'
 import PostData from '../post-elements/PostData'
+import Quote from '../post-elements/Quote'
 
 const Crypto2018 = () => (
   <div>
@@ -18,7 +19,10 @@ const Crypto2018 = () => (
       <Link to="/#writing">&#8592;</Link>
     </Back>
     <DocumentTitle title="2018: Where every day is spent getting excited over a new cryptocurrency" />
-    <Welcome title="2018: Where every day is spent getting excited over a new cryptocurrency" />
+    <Welcome
+      c="linear-gradient(to right, #56ccf2, #2f80ed);"
+      title="2018: Where every day is spent getting excited over a new cryptocurrency"
+    />
     <PostData>
       <Date>01/03/18</Date>
       <ViewCounter id="crypto" />
@@ -26,7 +30,7 @@ const Crypto2018 = () => (
 
     <Container>
       <p>
-        I am, by no means, a financial expert. I do not even thing I have
+        I am, by no means, a financial expert. I do not even think I have ever
         invested in anything before. However, there’s this new thing called
         digital currency, which you probably have heard about.{' '}
       </p>
@@ -59,6 +63,11 @@ const Crypto2018 = () => (
         real - if this bull market can keep on going. Everyone cannot win. There
         is only so much money in the world.{' '}
       </p>
+      <Quote
+        color="#ffaa3a"
+        quote="Everyone cannot win. There is only so much money in the world."
+      />
+
       <p>
         {' '}
         Actually, I may be suffering from{' '}

@@ -29,7 +29,7 @@ function Post(props) {
 
 const Writing = () => (
   <div id="writing">
-    <Subtitle g="linear-gradient(to right, #56ccf2, #2f80ed);" name="Writing" />
+    <Subtitle g="linear-gradient(to right, #232526, #414345);" name="Writing" />
     <Container>
       <Post
         url="/crypto-insanity"
