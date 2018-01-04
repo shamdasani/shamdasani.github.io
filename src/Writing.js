@@ -31,6 +31,10 @@ const Writing = () => (
   <div id="writing">
     <Subtitle g="linear-gradient(to right, #56ccf2, #2f80ed);" name="Writing" />
     <Container>
+      <Post
+        url="/crypto-insanity"
+        title="2018: Where every day is spent getting excited over a new cryptocurrency"
+      />
       <Post url="/life" title="Learning to Live" />
       <Post url="/side-project" title="My side project" />
       <Post url="/hello-world" title="Hello World" />

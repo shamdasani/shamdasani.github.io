@@ -49,7 +49,7 @@ const Work = () => (
       <Col sm={6}>
         <Project
           className="project"
-          url="https://tryenlight.github.io"
+          url="https://enlight.nyc"
           bg="linear-gradient(to right, #ff5f6d, #ffc371)"
           color="#4a4a4a;"
           title="Enlight"

@@ -11,6 +11,7 @@ import SpanishProject from './misc/SpanishProject'
 import HelloWorld from './posts/HelloWorld'
 import SideProject from './posts/SideProject'
 import Life from './posts/Life'
+import Crypto2018 from './posts/Crypto2018'
 
 render(
   <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
@@ -20,6 +21,7 @@ render(
       <Route path="/side-project" component={SideProject} />
       <Route path="/life" component={Life} />
       <Route path="/portafolio" component={SpanishProject} />
+      <Route path="/crypto-insanity" component={Crypto2018} />
     </Scroll>
   </BrowserRouter>,
   app
