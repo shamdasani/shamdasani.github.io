@@ -61,14 +61,14 @@ const Me = () => (
       </Subtitle>
       <Button
         bg="linear-gradient(to right, #56ccf2, #2f80ed)"
-        href="https://twitter.com/shamdasanii"
+        href="https://twitter.com/samaysham"
       >
         Twitter
       </Button>
 
       <Button
         bg="linear-gradient(to right, #16222a, #3a6073)"
-        href="https://instagram.com/shamdasanii"
+        href="https://instagram.com/samaysham"
       >
         Instagram
       </Button>

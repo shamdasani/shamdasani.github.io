@@ -6,6 +6,8 @@ import Scroll from './Scroll'
 import App from './App'
 import Home from './Home'
 
+import Journal from './journal/Journal'
+
 import SpanishProject from './misc/SpanishProject'
 
 import HelloWorld from './posts/HelloWorld'
@@ -17,6 +19,7 @@ render(
   <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
     <Scroll>
       <Route exact path="/" component={Home} />
+      <Route path="/journal" component={Journal} />
       <Route path="/hello-world" component={HelloWorld} />
       <Route path="/side-project" component={SideProject} />
       <Route path="/life" component={Life} />
