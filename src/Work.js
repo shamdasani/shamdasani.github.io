@@ -23,12 +23,12 @@ const Description = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
   color: ${props => props.color};
-  padding-left: 5%;
+  padding: 5%;
 `
 
 function Project(props) {
   return (
-    <Tilt options={{ max: 20 }}>
+    <Tilt options={{ max: 10 }}>
       <a href={props.url}>
         <Card bg={props.bg}>
           <Title color={props.color}>{props.title}</Title>
@@ -46,41 +46,39 @@ const Work = () => (
       name="Featured Work"
     />
     <Row>
-      <Col sm={6}>
+      <Col sm={3}>
         <Project
           className="project"
           url="https://enlight.nyc"
-          bg="linear-gradient(to right, #ff5f6d, #ffc371)"
-          color="#4a4a4a;"
+          bg="linear-gradient(to right, #56ccf2, #2f80ed)"
+          color="#fff;"
           title="Enlight"
           description="Learn to code by building projects"
         />
       </Col>
-      <Col sm={6}>
+      <Col sm={3}>
         <Project
           url="https://github.com/blinkcare/blink"
-          bg="linear-gradient(to right, #000046, #1cb5e0);"
+          bg="linear-gradient(to right, #16222a, #3a6073)"
           color="#E2E2E2"
           title="Blink"
           description="Affordable and accurate communication for locked-in patients"
         />
       </Col>
-    </Row>
-    <Row>
-      <Col sm={6}>
+      <Col sm={3}>
         <Project
-          url="https://shamdasani.org/WeatherPi"
-          bg="linear-gradient(to right, #e1eec3, #f05053);"
-          color="#4a4a4a"
-          title="WeatherPi"
-          description="Temperature and humidity vizualization of my room"
+          url="https://makespp.com"
+          bg="linear-gradient(to right, #8e0e00, #844848);"
+          color="#fff"
+          title="MakeSPP"
+          description="High school hackathon bringing together 100+ future entrepreuners and engineers"
         />
       </Col>
 
-      <Col sm={6}>
+      <Col sm={3}>
         <Project
           url="https://github.com/shamdasani/peters"
-          bg="linear-gradient(to right, #c94b4b, #4b134f);"
+          bg="linear-gradient(to right, #cb2d3e, #ef473a);"
           color="#E4E4E4"
           title="Peters"
           description="Cross-platform app for Saint Peter's Prep students built with React Native"
@@ -89,22 +87,40 @@ const Work = () => (
     </Row>
 
     <Row>
-      <Col sm={6}>
+      <Col sm={3}>
+        <Project
+          url="https://shamdasani.org/WeatherPi"
+          bg="linear-gradient(to right, #ec6f66, #f3a183);"
+          color="#4a4a4a"
+          title="WeatherPi"
+          description="Temperature and humidity vizualization of my room"
+        />
+      </Col>
+      <Col sm={3}>
         <Project
           url="https://wiki.shamdasani.org"
-          bg="linear-gradient(to right, #00b09b, #96c93d)"
+          bg="linear-gradient(to right, #00b09b, #67892a)"
           color="#fcfcbb;"
           title="Wiki"
           description="Wikipedia viewer fitted to my visual taste"
         />
       </Col>
-      <Col sm={6}>
+      <Col sm={3}>
         <Project
           url="https://shamdasani.org/color"
-          bg="linear-gradient(to right, #ee9ca7, #ffdde1)"
-          color="#4a4a4a;"
+          bg="linear-gradient(to right, #bbd2c5, #536976);"
+          color="#000;"
           title="Color"
           description="Simple color contrast generator"
+        />
+      </Col>
+      <Col sm={3}>
+        <Project
+          url="https://github.com/shamdasani/SwiftFrameworks"
+          bg="linear-gradient(to right, #ee9ca7, #ffdde1)"
+          color="#4a4a4a;"
+          title="Swift Frameworks"
+          description="Accepted WWDC18 Scholarship Playground Submission"
         />
       </Col>
     </Row>

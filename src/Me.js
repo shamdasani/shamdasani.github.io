@@ -80,6 +80,12 @@ const Me = () => (
         GitHub
       </Button>
       <Button
+        bg="linear-gradient(to right, #4ecdc4, #556270);"
+        href="https://shamdasani.org/resume.pdf"
+      >
+        Resume
+      </Button>
+      <Button
         bg="linear-gradient(to right, #ff512f, #dd2476)"
         href="mailto:techboss302@gmail.com"
       >
