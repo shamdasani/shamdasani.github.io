@@ -60,36 +60,36 @@ const Me = () => (
         <Link href="https://shamdasani.org/photos">photos</Link>.
       </Subtitle>
       <Button
-        bg="linear-gradient(to right, #56ccf2, #2f80ed)"
+        bg="#56ccf2"
         href="https://twitter.com/samaysham"
       >
         Twitter
       </Button>
 
       <Button
-        bg="linear-gradient(to right, #16222a, #3a6073)"
+        bg="#16222a"
         href="https://instagram.com/samaysham"
       >
         Instagram
       </Button>
 
       <Button
-        bg="linear-gradient(to right, #ffb75e, #ed8f03)"
+        bg="#ffb75e"
         href="https://github.com/shamdasani"
       >
         GitHub
       </Button>
       <Button
-        bg="linear-gradient(to right, #4ecdc4, #556270);"
+        bg="#4ecdc4"
         href="https://shamdasani.org/resume.pdf"
       >
         Resume
       </Button>
       <Button
-        bg="linear-gradient(to right, #ff512f, #dd2476)"
-        href="mailto:techboss302@gmail.com"
+        bg="#ff512f"
+        href="mailto:samay@shamdasani.org"
       >
-        techboss302@gmail.com
+        samay@shamdasani.org
       </Button>
     </Container>
     <Work />

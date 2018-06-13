@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   entry: './src/entry.js',
   output: {
-    filename: './bundle.js'
+    filename: './public/bundle.js'
   },
   module: {
     loaders: [

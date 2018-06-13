@@ -23,7 +23,7 @@ render(
       <Route path="/hello-world" component={HelloWorld} />
       <Route path="/side-project" component={SideProject} />
       <Route path="/life" component={Life} />
-      <Route path="/portafolio" component={SpanishProject} />
+      // <Route path="/portafolio" component={SpanishProject} />
       <Route path="/crypto-insanity" component={Crypto2018} />
     </Scroll>
   </BrowserRouter>,
